@@ -1,1 +1,19 @@
-streamlit==1.39.0 langchain-openai==0.2.0 langchain-huggingface==0.1.0 python-dotenv==1.0.1
+#Python
+
+python
+
+streamlit
+
+# LangChain Core
+langchain
+langchain-core
+
+# OpenAI Integration
+langchain-openai
+openai
+
+# Environment Variable Management
+python-dotenv
+
+# Machine Learning Utilities
+numpy
