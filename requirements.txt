@@ -1,7 +1,5 @@
 #Python
 
-python
-
 streamlit
 
 # LangChain Core
