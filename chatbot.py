@@ -6,11 +6,9 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables
-#load_dotenv()
+load_dotenv()
 
-# Initialize the HuggingFace model
-OPENAI_API_KEY = "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"
-model = ChatOpenAI(api_key=OPENAI_API_KEY)
+model = ChatOpenAI()
 
 # Custom CSS for ChatGPT-like UI with mobile compatibility
 st.markdown("""
