@@ -1,9 +1,9 @@
 from langchain_openai import ChatOpenAI
 import streamlit as st
-from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+#from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from dotenv import load_dotenv
-import os
+#import os
 
 # Load environment variables
 load_dotenv()
