@@ -3,12 +3,16 @@ import streamlit as st
 #from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from dotenv import load_dotenv
-#import os
+import os
 
 # Load environment variables
 load_dotenv()
-
-model = ChatOpenAI()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    st.error("OPENAI_API_KEY is not set. Please configure it in the environment.")
+    st.stop()
+    
+model = ChatOpenAI(api_key=OPENAI_API_KEY)
 
 # Custom CSS for ChatGPT-like UI with mobile compatibility
 st.markdown("""
