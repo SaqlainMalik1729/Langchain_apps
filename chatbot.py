@@ -184,6 +184,10 @@ st.markdown("""
             top: 5px;
             right: 5px;
         }
+        * Hide Streamlit branding and footer */
+    footer, [data-testid="stFooter"], .streamlit-footer, .viewerBadge_container__1QSob {
+        display: none !important;
+    }
     }
     </style>
 """, unsafe_allow_html=True)
